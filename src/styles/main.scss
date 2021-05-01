@@ -1,0 +1,24 @@
+@use "~pretty-checkbox/src/scss/variables" with (
+  $pretty--color-default: var(--radio--color)
+);
+
+@use "~pretty-checkbox/src/scss/core";
+@use "~pretty-checkbox/src/scss/elements/default/outline";
+@use "~pretty-checkbox/src/scss/extras/disabled";
+@use "~pretty-checkbox/src/scss/extras/round";
+@use "~pretty-checkbox/src/scss/states/focus";
+
+:root {
+  --radio--color: #000;
+  --radio--disabled--color: grey;
+}
+
+.#{$pretty--class-name} {
+  input {
+    &[disabled] {
+      & ~ * {
+        border-color: var(--radio--disabled--color);
+      }
+    }
+  }
+}

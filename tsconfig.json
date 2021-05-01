@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES2015"]
+  }
+}
